@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbdxsoeediil5"]
+
+[ext_resource type="Script" path="res://Stage Assets/StaticBody2D.gd" id="1_bs3rj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfr13"]
+size = Vector2(1152, 19)
+
+[node name="StageGround" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+modulate = Color(1, 0.443137, 1, 1)
+script = ExtResource("1_bs3rj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(577, 638.5)
+shape = SubResource("RectangleShape2D_lfr13")
+debug_color = Color(0.262185, 0.551816, 0.834377, 0.42)
